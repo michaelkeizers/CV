@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "basics": {
+    "name": "Michael Keizers",
+    "label": "Student HBO ICT Software Engineering",
+    "picture": "/images/profile_picture.jpg",
+    "email": "michaelkeizers@outlook.com",
+    "phone": "0633697701",
+    "degree": "Propedeuse",
+    "website": "https://michaelkeizers.github.io/",
+    "summary": "",
+    "highlights": null,
+    "location": {
+      "address": "Hardesteinstraat 3",
+      "postalCode": "8012ES",
+      "city": "Zwolle",
+      "countryCode": "",
+      "region": "Overijssel"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "michaelkeizers",
+        "url": "https://www.linkedin.com/in/michaelkeizers/"
+      },
+      {
+        "network": "GitHub",
+        "username": "michaelkeizers",
+        "url": "https://github.com/michaelkeizers"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "IKEA",
+      "position": "Goods Flow Co-worker",
+      "website": "",
+      "startDate": "2021-01-01",
+      "endDate": "",
+      "summary": "Werkzaam in het logistieke proces bij IKEA Zwolle. Werkzaamheden zijn onder andere het bevoorraden van de winkel en het magazijn.",
+      "highlights": [
+        ""
+      ],
+      "location": "Zwolle"
+    }
+  ],
+  "additionalWork": [
+    {
+      "company": "Van Merksteijn Staalcoating B.V.",
+      "position": "Logistiek medewerker",
+      "website": "",
+      "startDate": "2015-10-01",
+      "endDate": "2020-12-31",
+      "summary": "Werkzaamheden waren onder andere: de kwaliteit van materiaal controleren, het rijden en neerzetten van lege en volle trailers en het materiaal herpakken en laden op de trailer met behulp van heftruck en kraan.",
+      "highlights": [
+        ""
+      ],
+      "location": "Raalte"
+    }
+  ],
+  "workLabel": "",
+  "additionalWorkLabel": "",
+  "education": [
+    {
+      "institution": "Hogeschool Windesheim",
+      "area": "HBO ICT Software Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2020-09-01",
+      "endDate": "2024-07-31",
+      "gpa": "",
+      "diploma": false,
+      "courses": [
+        ""
+      ],
+      "location": "Zwolle"
+    },
+    {
+      "institution": "Hogeschool Windesheim",
+      "area": "HBO ICT Software Engineering, Propedeusejaar",
+      "studyType": "Propedeuse",
+      "startDate": "2020-09-01",
+      "endDate": "2021-07-31",
+      "gpa": "",
+      "diploma": true,
+      "courses": [
+        ""
+      ],
+      "location": "Zwolle"
+    },
+    {
+      "institution": "freeCodeCamp.org",
+      "area": "JavaScript Algorithms And Data Structures",
+      "studyType": "Cursus",
+      "startDate": "2021-01-01",
+      "endDate": "",
+      "gpa": "",
+      "diploma": false,
+      "courses": [
+        ""
+      ],
+      "location": ""
+    },
+    {
+      "institution": "freeCodeCamp.org",
+      "area": "Responsive Web Design",
+      "studyType": "Cursus",
+      "startDate": "2018-09-01",
+      "endDate": "2018-11-30",
+      "gpa": "",
+      "diploma": true,
+      "courses": [
+        ""
+      ],
+      "location": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "C#",
+      "level": "Beginner",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": ".NET",
+      "level": "Beginner",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Beginner",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "JSON",
+      "level": "Beginner",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Beginner",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "JAVA",
+      "level": "Beginner",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "PHP",
+      "level": "Beginner",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "HTML",
+      "level": "Proficient",
+      "keywords": [
+        ""
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Beginner",
+      "keywords": [
+        ""
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Nederlands",
+      "level": "C2"
+    },
+    {
+      "language": "Engels",
+      "level": "C2"
+    }
+  ]
+}
