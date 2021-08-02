@@ -4,12 +4,20 @@
     "name": "Michael Keizers",
     "label": "Student HBO ICT Software Engineering",
     "picture": "/images/profile_picture.jpg",
+    "birthday": "1987-12-04",
     "email": "michaelkeizers@outlook.com",
     "phone": "0633697701",
     "degree": "Propedeuse",
     "website": "https://michaelkeizers.github.io/",
-    "summary": "",
-    "highlights": null,
+    "summary": "Tweedejaars deeltijdstudent HBO-ICT aan Hogeschool Windesheim. Vastberaden om een software engineer te worden, waarbij kwaliteit en veiligheid centraal staan.\\nCollegiaal persoon die graag samen werkt in een team aan uitdagende projecten.\\nEnthousiast over C#, ASP.net en JavaScript.",
+    "highlights": [
+      "Toegewijd",
+      "Oplossingsgericht denken",
+      "Vriendelijk en loyaal",
+      "Evenwichtig onder druk",
+      "Goede schriftelijke en mondelinge communicatie",
+      "Collegiaal en een teamspeler"
+    ],
     "location": {
       "address": "Hardesteinstraat 3",
       "postalCode": "8012ES",
@@ -112,68 +120,107 @@
         ""
       ],
       "location": ""
+    },
+    {
+      "institution": "Deltion College Sprint",
+      "area": "Theoretische Leerweg Niveau 4",
+      "studyType": "Voortgezet Onderwijs",
+      "startDate": "2009-09-01",
+      "endDate": "2010-06-30",
+      "gpa": "",
+      "diploma": true,
+      "courses": [
+        ""
+      ],
+      "location": "Zwolle"
+    },
+    {
+      "institution": "Deltion College",
+      "area": "OJKL Orde & Veiligheid: Beveiliging",
+      "studyType": "MBO",
+      "startDate": "2006-09-01",
+      "endDate": "2007-07-30",
+      "gpa": "",
+      "diploma": true,
+      "courses": [
+        ""
+      ],
+      "location": "Zwolle"
+    },
+    {
+      "institution": "Carmel College Salland",
+      "area": "Theoretische Leerweg Niveau 4",
+      "studyType": "Voortgezet Onderwijs",
+      "startDate": "2001-09-01",
+      "endDate": "2006-06-30",
+      "gpa": "",
+      "diploma": false,
+      "courses": [
+        ""
+      ],
+      "location": "Raalte"
     }
   ],
   "skills": [
     {
       "name": "C#",
-      "level": "Beginner",
+      "level": "Novice",
       "keywords": [
         ""
       ]
     },
     {
       "name": ".NET",
-      "level": "Beginner",
+      "level": "Novice",
       "keywords": [
         ""
       ]
     },
     {
       "name": "JavaScript",
-      "level": "Beginner",
+      "level": "Advanced Beginner",
       "keywords": [
         ""
       ]
     },
     {
       "name": "JSON",
-      "level": "Beginner",
+      "level": "Novice",
       "keywords": [
         ""
       ]
     },
     {
       "name": "MySQL",
-      "level": "Beginner",
+      "level": "Novice",
       "keywords": [
         ""
       ]
     },
     {
       "name": "JAVA",
-      "level": "Beginner",
+      "level": "Novice",
       "keywords": [
         ""
       ]
     },
     {
       "name": "PHP",
-      "level": "Beginner",
+      "level": "Novice",
       "keywords": [
         ""
       ]
     },
     {
       "name": "HTML",
-      "level": "Proficient",
+      "level": "Competent",
       "keywords": [
         ""
       ]
     },
     {
       "name": "CSS",
-      "level": "Beginner",
+      "level": "Advanced Beginner",
       "keywords": [
         ""
       ]

@@ -1,3 +1,5 @@
+"use strict";
+
 let requestURL = "resume.json";
 let request = new XMLHttpRequest();
 request.open("GET", requestURL);
@@ -12,17 +14,27 @@ request.onload = function () {
 
 function populateLeftColumn(obj) {
   const data = obj;
-
+  showSummary(data);
   showContactInformation(data);
   showSkills(data);
+  showHighlights(data);
   showLanguages(data);
 }
 
 function populateRightColumn(obj) {
   const data = obj;
-
   showWorkExperience(data);
   showEducation(data);
+}
+
+function showSummary(obj) {
+  const data = obj;
+  const summarySection = document.getElementById("summary");
+  const para = document.createElement("p");
+  let summary = data.basics.summary;
+  data.basics.summary = summary.replaceAll("\\n", "<br><br>");
+  para.innerHTML = data.basics.summary;
+  summarySection.appendChild(para);
 }
 
 function showContactInformation(obj) {
@@ -33,8 +45,14 @@ function showContactInformation(obj) {
 
   const education = data.education[0].area;
   const city = data.basics.location.city + ", " + data.basics.location.region;
-  const emailAddress = data.basics.email;
-  const phoneNumber = data.basics.phone;
+  const emailAddress = document.createElement("a");
+  emailAddress.href = "mailto:" + data.basics.email;
+  emailAddress.innerHTML = data.basics.email;
+  emailAddress.className = "text-reset";
+  const phoneNumber = document.createElement("a");
+  phoneNumber.href = "tel:" + data.basics.phone;
+  phoneNumber.innerHTML = data.basics.phone;
+  phoneNumber.className = "text-reset";
 
   const para1 = document.createElement("p");
   const para2 = document.createElement("p");
@@ -67,7 +85,7 @@ function showContactInformation(obj) {
     const network = data["basics"]["profiles"][i].network;
 
     faIcon.className =
-      "fa fa-" +
+      "fab fa-" +
       network.toString().toLowerCase() +
       " fa-fw me-3 fs-5 text-teal";
 
@@ -84,15 +102,74 @@ function showSkills(obj) {
   const data = obj;
   const sectionSkills = document.getElementById("skills");
   const skills = data.skills;
-  const skillList = document.createElement("ul");
+
+  // for (let i = 0; i < skills.length; i++) {
+  //   const divEl = document.createElement("div");
+  //   const progressDiv = document.createElement("div");
+  //   const progressBarDiv = document.createElement("div");
+
+  //   divEl.textContent = skills[i].name;
+
+  //   let ariaValueNow;
+  //   const level = skills[i].level;
+  //   switch (level) {
+  //     case "Novice":
+  //       ariaValueNow = "20";
+  //       break;
+  //     case "Advanced Beginner":
+  //       ariaValueNow = "40";
+  //       break;
+  //     case "Competent":
+  //       ariaValueNow = "60";
+  //       break;
+  //     case "Proficient":
+  //       ariaValueNow = "80";
+  //       break;
+  //     case "Expert":
+  //       ariaValueNow = "100";
+  //       break;
+  //     default:
+  //       ariaValueNow = "0";
+  //   }
+
+  //   progressDiv.className = "progress mb-3";
+  //   progressBarDiv.className =
+  //     "progress-bar bg-teal progress-bar-striped progress-bar-animated text-center text-white";
+  //   progressBarDiv.setAttribute("role", "progressbar");
+  //   progressBarDiv.style.width = ariaValueNow + "%";
+  //   progressBarDiv.setAttribute("aria-valuenow", ariaValueNow);
+  //   progressBarDiv.setAttribute("aria-valuemin", "0");
+  //   progressBarDiv.setAttribute("aria-valuemax", "100");
+
+  //   sectionSkills.appendChild(divEl);
+  //   progressDiv.appendChild(progressBarDiv);
+  //   sectionSkills.appendChild(progressDiv);
+  // }
 
   for (let i = 0; i < skills.length; i++) {
+    const span = document.createElement("span");
+    span.className = "badge bg-teal me-1 mt-1 fs-6";
+    span.textContent = skills[i].name;
+
+    sectionSkills.appendChild(span);
+  }
+}
+
+function showHighlights(obj) {
+  const data = obj;
+  const highlightsSection = document.getElementById("highlights");
+  const highlights = data.basics.highlights;
+
+  const highlightsList = document.createElement("ul");
+  highlightsList.className = "text-black-50";
+
+  for (let i = 0; i < highlights.length; i++) {
     const listItem = document.createElement("li");
-    listItem.textContent = skills[i].name;
-    skillList.appendChild(listItem);
+    listItem.textContent = highlights[i];
+    highlightsList.appendChild(listItem);
   }
 
-  sectionSkills.appendChild(skillList);
+  highlightsSection.appendChild(highlightsList);
 }
 
 function showLanguages(obj) {
@@ -133,6 +210,7 @@ function showLanguages(obj) {
     }
 
     progressDiv.className = "progress mb-3";
+    progressDiv.style.height = "20px";
     progressBarDiv.className =
       "progress-bar bg-teal progress-bar-striped progress-bar-animated text-center text-white";
     progressBarDiv.setAttribute("role", "progressbar");
